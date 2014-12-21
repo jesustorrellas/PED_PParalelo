@@ -1,0 +1,40 @@
+// La primera llamada a esta funcion debe ser: busquedaRecursiva(palabraBuscada, 0, 0, 0)
+
+#include <stdio.h>
+#include <string.h>
+
+#include "funciones.h"
+/*
+Parametros:
+	- matriz[][] -> sopa de letras
+	- word[] -> palabra que buscamos en la sopa de letras
+	- posicion -> posicion que indica el caracter dentro de la palabra que buscamos en la sopa de letras
+	Ejemplo: word[] = "ten"
+		 si buscamos la 't', posicion = 0
+		 si buscamos la 'e', posicion = 1
+		 si buscamos la 'n', posicion = 2
+	- fila -> coordenada de fila de la sopa de letras, en la que comenzar la busqueda
+	- columna -> coordenada de columna de la sopa de letras, en la que comenzar la busqueda
+*/
+void busqueda_Recursiva_Horizontal_Derecha(char matriz[3][4], char word[], int posicion, int fila, int columna)
+{
+	int i, j;
+	printf("Hay que buscar una palabra con: %d letras", strlen(word));
+	if (posicion < 3){
+		for(i = fila; i < 3; i++){
+			for (j = columna; j < 3; j++ ){
+				if(matriz[i][j] == word[posicion]){//Como comparamos caracteres y no strings, no utilizamos la funcion strcmp()
+					printf("Hemos encontrado una %c en la posicion [%i - %i]\n",word[posicion],i ,j);
+					busqueda_Recursiva_Horizontal_Derecha(matriz, word, posicion+1, i, j+1);
+	//Con este return, cancelamos el recorrido completo de la matriz por cada llamada recursiva, aun despues de haber encontrado una letra
+					return;
+				}else{
+					printf("No hemos encontrado la letra en la posicion [%i - %i]\n", i, j);
+				}
+			}
+			printf("\n");
+		}
+
+//	printf("el caracter 3 es: %c\n", word[posicion]);
+	}//fin del if
+}//fin funcion

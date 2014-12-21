@@ -1,0 +1,10 @@
+- Esta carpeta cuenta con un fichero .git para controlar las versiones.
+Con $ git status, podemos ver el estado de las versiones controladas por git
+
+
+- El fichero Makefile es el que utiliza el comando make para compilar los
+ficheros de la aplicacion.  Con $ make matriz_string se arranca
+
+- Opcion mas larga para compilar los tres ficheros:
+$ gcc funciones.c funciones.h matriz_string.c -o matriz_string
+

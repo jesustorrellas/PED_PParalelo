@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include "funciones.h"
+c"
+
+char matriz[3][4] = {"acf","ten","ghi",};
+
+char palabra[] = "ten";
+
+
+int main()
+{
+	busquedaRecursiva(matriz, palabra,0);// El valor del tercer parametro en esta llamada siempre ha de ser 0 para empezar por el principio
+	return 0;
+}//end main
+
+
+
