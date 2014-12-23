@@ -5,7 +5,7 @@
 
 char matriz[4][9] = {"acfvdfgq","rfvtenjk","xszghiut","wsxcderv"};
 
-char palabra[] = "sztd";
+char palabra[] = "qjid";
 
 
 
