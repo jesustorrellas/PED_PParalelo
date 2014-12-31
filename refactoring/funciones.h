@@ -1,0 +1,8 @@
+void busqueda_Recursiva_Horizontal_Derecha(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Horizontal_Izquierda(char mnatriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Vertical_Abajo(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Vertical_Arriba(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Diagonal_Uno(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Diagonal_Dos(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Diagonal_Tres(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);
+void busqueda_Recursiva_Diagonal_Cuatro(char matriz[][9], char word[], int posicion, int fila, int columna, int solucion[][2]);

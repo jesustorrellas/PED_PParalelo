@@ -52,7 +52,7 @@ void busqueda_Recursiva_Horizontal_Derecha(char matriz[][9], char word[], int po
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -85,7 +85,7 @@ void busqueda_Recursiva_Vertical_Abajo(char matriz[][9], char word[], int posici
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -118,7 +118,7 @@ void busqueda_Recursiva_Horizontal_Izquierda(char matriz[][9], char word[], int 
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -151,7 +151,7 @@ void busqueda_Recursiva_Vertical_Arriba(char matriz[][9], char word[], int posic
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -185,7 +185,7 @@ void busqueda_Recursiva_Diagonal_Uno(char matriz[][9], char word[], int posicion
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -219,7 +219,7 @@ void busqueda_Recursiva_Diagonal_Dos(char matriz[][9], char word[], int posicion
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -253,7 +253,7 @@ void busqueda_Recursiva_Diagonal_Tres(char matriz[][9], char word[], int posicio
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 
@@ -287,7 +287,7 @@ void busqueda_Recursiva_Diagonal_Cuatro(char matriz[][9], char word[], int posic
 					posicion = 0;
 				}
 			}
-//			printf("\n");
+			printf("\n");
 		}
 
 

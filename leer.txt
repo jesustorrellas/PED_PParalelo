@@ -8,3 +8,10 @@ ficheros de la aplicacion.  Con $ make matriz_string se arranca
 - Opcion mas larga para compilar los tres ficheros:
 $ gcc funciones.c funciones.h matriz_string.c -o matriz_string
 
+- Para utilizar la libreria MPI:
+	- Aniadimos la directiva #include <mpi.h>
+	- Compilamos con el comando: mpicc matriz_string.c -o mpi_matriz_string
+	- Para compilar cambios en ficheros dependientes:
+		mpicc funciones.h funciones.c matriz_string.c -o mpi_matriz_string
+	- Ejecutamos con el comando: mpirun -np 4 ./mpi_matriz_string
+
